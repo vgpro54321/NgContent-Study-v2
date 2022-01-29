@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ContentChild, OnInit } from '@angular/core';
+import { EnvelopeDirective } from '../envelope.directive';
 
 @Component({
   selector: 'app-layout',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
   public expanded: boolean = false;
+  @ContentChild(EnvelopeDirective) envelope!: EnvelopeDirective;
 
   constructor() {}
 

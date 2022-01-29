@@ -8,4 +8,8 @@
   <ng-content select=".queryByClass"></ng-content>
 </div>
 
+<div style="background-color: green; color: white;">
+  <ng-container [ngTemplateOutlet]="envelope.templateRef"></ng-container>
+</div>
+
 <button (clock)="expandCollapse()">Expand / Collapse</button>
