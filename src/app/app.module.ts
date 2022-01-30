@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LayoutInstanceComponent } from './layout-instance/layout-instance.component';
 import { EnvelopeDirective } from './envelope.directive';
+import { EnvelopeContentDirective } from './envelope-content.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -16,6 +17,7 @@ import { EnvelopeDirective } from './envelope.directive';
     LayoutComponent,
     LayoutInstanceComponent,
     EnvelopeDirective,
+    EnvelopeContentDirective,
   ],
   bootstrap: [AppComponent],
 })

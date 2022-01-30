@@ -4,5 +4,7 @@ import { Directive, TemplateRef } from '@angular/core';
   selector: '[appEnvelope]',
 })
 export class EnvelopeDirective {
-  constructor(public templateRef: TemplateRef<unknown>) {}
+  constructor(public templateRef: TemplateRef<unknown>) {
+    console.log('templateRef');
+  }
 }
