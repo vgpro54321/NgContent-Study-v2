@@ -4,7 +4,7 @@ import { Directive, ViewContainerRef } from '@angular/core';
   selector: '[appEnvelopeContent]',
 })
 export class EnvelopeContentDirective {
-  constructor() {
+  constructor(public viewContainerRef: ViewContainerRef) {
     console.log('EnvelopeContentDirective');
   }
 }
