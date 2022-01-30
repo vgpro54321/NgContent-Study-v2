@@ -1,10 +1,10 @@
-import { Directive, ViewContainerRef } from '@angular/core';
+import { ComponentRef, Directive, ViewContainerRef } from '@angular/core';
 
 @Directive({
   selector: '[appEnvelopeContent]',
 })
 export class EnvelopeContentDirective {
-  constructor(public viewContainerRef: ViewContainerRef) {
+  constructor(public componentRef: ComponentRef<any>) {
     console.log('EnvelopeContentDirective');
   }
 }
