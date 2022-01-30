@@ -10,14 +10,7 @@ import {
   selector: '[appEnvelopeContent]',
 })
 export class EnvelopeContentDirective {
-  constructor(
-    @Optional() public componentRef: ComponentRef<any>,
-    @Optional() public elementRef: ElementRef<any>
-  ) {
-    console.log(
-      'EnvelopeContentDirective',
-      componentRef != null,
-      elementRef != null
-    );
+  constructor(public viewContainerRef: ViewContainerRef) {
+    console.log('EnvelopeContentDirective', viewContainerRef != null);
   }
 }

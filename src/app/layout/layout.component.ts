@@ -31,12 +31,10 @@ export class LayoutComponent implements OnInit, AfterContentInit {
     );
 
     console.log(
-      this.envelopeContent?.componentRef
+      this.envelopeContent?.viewContainerRef
         ? 'envelopeContent prop assigned'
         : ' no envelopeContent prop ref'
     );
-
-    console.log(this.envelopeContent?.componentRef);
   }
   expandCollapse() {
     this.expanded != this.expanded;
