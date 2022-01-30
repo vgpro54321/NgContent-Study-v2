@@ -14,6 +14,10 @@ export class EnvelopeContentDirective {
     @Optional() public componentRef: ComponentRef<any>,
     @Optional() public elementRef: ElementRef<any>
   ) {
-    console.log('EnvelopeContentDirective');
+    console.log(
+      'EnvelopeContentDirective',
+      componentRef != null,
+      elementRef != null
+    );
   }
 }
